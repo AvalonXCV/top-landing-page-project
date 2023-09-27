@@ -1,7 +1,11 @@
 * {
-  border: rgb(255, 0, 76) 1px solid;
+  border: rgba(255, 0, 76, 0) 1px solid;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body{
+    padding: 0px;
 }
 
 .header {
@@ -34,18 +38,19 @@ a:active {
 
 .section1 {
   background-color: #1f2937;
-  padding: 32px;
+  height: 300px;
+  padding: 64px 32px;
   display: flex;
   justify-content: center;
-  gap: 24px;
+  align-items: center;
+  gap: 32px;
 }
 
 .section1 .container {
-  padding: 4px;
+  height: 225px;
   flex-basis: 450px;
   flex-grow: 0;
   flex-shrink: 0;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -55,6 +60,7 @@ a:active {
 .section1 .img-container {
   background-color: #6d747d;
   color: #e5e7eb;
+  height: 225px;
   flex-basis: 450px;
   flex-grow: 0;
   flex-shrink: 0;
@@ -70,8 +76,8 @@ a:active {
   margin: 0px;
 }
 
-.subtext {
-  font-size: 18px;
+.section1 .subtext {
+  font-size: 15px;
   color: #e5e7eb;
   margin: 0px;
 }
@@ -86,3 +92,51 @@ a:active {
   margin: 0px;
   margin-right: auto;
 }
+
+.section2{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 64px 32px;
+    height: 300px;
+}
+
+.section h2{
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.section2 .container{
+    display: flex;
+    justify-content: center;
+    gap:32px;
+}
+
+.section2 .icon-container{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2 .icon-ph{
+    display: flex;
+    border:#3882f6 2px solid;
+    border-radius: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width:150px;
+    height: 150px;
+    margin:4px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 .subtext {
+    font-size: 12px;
+    color: #505050;
+    margin: 0px;
+  }
